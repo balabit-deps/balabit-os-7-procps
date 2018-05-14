@@ -1,0 +1,13 @@
+remove_strtod_tests
+watch_hostname_max_define
+disable_sched_test
+uptime_test
+pmap_test
+ignore_eaccess.patch
+ignore_erofs.patch
+832148_no_sigpwr
+CVE-2018-1122.patch
+CVE-2018-1123.patch
+CVE-2018-1124.patch
+CVE-2018-1125.patch
+CVE-2018-1126.patch
