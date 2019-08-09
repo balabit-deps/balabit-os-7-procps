@@ -1,3 +1,11 @@
+procps (2:3.3.12-3ubuntu1.2) bionic; urgency=medium
+
+  * d/p/pgrep-increase-CMDSTRSIZE.patch:
+    - Allows long command lines to be searched.
+    eg: Java process with a long classpath. (LP: #1839329)
+
+ -- Eric Desrochers  <eric.desrochers@canonical.com>  Fri, 09 Aug 2019 15:37:27 +0000
+
 procps (2:3.3.12-3ubuntu1.1) bionic-security; urgency=medium
 
   * SECURITY UPDATE: top configuration file read from current directory

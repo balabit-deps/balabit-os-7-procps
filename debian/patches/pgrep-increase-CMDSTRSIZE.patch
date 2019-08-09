@@ -1,0 +1,21 @@
+Description: pgrep: increase CMDSTRSIZE from 4096 to 16384
+ allows long command lines to be searched
+ eg: finding the main class at the end of the command line
+ of a java process with a long classpath
+Author: Oliver Mannion
+Origin: upstream, https://gitlab.com/procps-ng/procps/commit/e5e8421ff60bc751d47fb2698daaf51f84f28f1b?merge_request_iid=80
+Bug: https://gitlab.com/procps-ng/procps/issues/86
+Bug-Ubuntu: https://launchpad.net/bugs/1839329
+Index: procps-3.3.12/pgrep.c
+===================================================================
+--- procps-3.3.12.orig/pgrep.c
++++ procps-3.3.12/pgrep.c
+@@ -42,7 +42,7 @@
+ #define EXIT_FATAL 3
+ #define XALLOC_EXIT_CODE EXIT_FATAL
+ 
+-#define CMDSTRSIZE 4096
++#define CMDSTRSIZE 16384
+ 
+ #include "c.h"
+ #include "fileutils.h"
